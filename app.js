@@ -9,7 +9,7 @@ var pikePlace = {
   },
 
   calcTotalPerHr: function () {
-    return this.calcRandHrlyCust() * this.avgCookPerCust;
+    return Math.ceil(this.calcRandHrlyCust() * this.avgCookPerCust);
   },
 
   getTotalsPerHr: function () {
@@ -50,7 +50,7 @@ var seaTac = {
   },
 
   calcTotalPerHr: function () {
-    return this.calcRandHrlyCust() * this.avgCookPerCust;
+    return Math.ceil(this.calcRandHrlyCust() * this.avgCookPerCust);
   },
 
   getTotalsPerHr: function () {
@@ -91,7 +91,7 @@ var southCenter = {
   },
 
   calcTotalPerHr: function () {
-    return this.calcRandHrlyCust() * this.avgCookPerCust;
+    return Math.ceil(this.calcRandHrlyCust() * this.avgCookPerCust);
   },
 
   getTotalsPerHr: function () {
@@ -132,7 +132,7 @@ var bellevueSquare = {
   },
 
   calcTotalPerHr: function () {
-    return this.calcRandHrlyCust() * this.avgCookPerCust;
+    return Math.ceil(this.calcRandHrlyCust() * this.avgCookPerCust);
   },
 
   getTotalsPerHr: function () {
@@ -173,7 +173,7 @@ var alki = {
   },
 
   calcTotalPerHr: function () {
-    return this.calcRandHrlyCust() * this.avgCookPerCust;
+    return Math.ceil(this.calcRandHrlyCust() * this.avgCookPerCust);
   },
 
   getTotalsPerHr: function () {
