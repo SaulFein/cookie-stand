@@ -18,7 +18,6 @@ var pikePlace = {
       this.hourlyTotals[i] = this.calcTotalPerHr();
       nextHour.innerHTML = this.times[i] + this.hourlyTotals[i];
       document.getElementById('pikePlaceList').appendChild(nextHour);
-
     }
     return this.hourlyTotals;
   },
@@ -59,7 +58,6 @@ var seaTac = {
       this.hourlyTotals[i] = this.calcTotalPerHr();
       nextHour.innerHTML = this.times[i] + this.hourlyTotals[i];
       document.getElementById('seaTacList').appendChild(nextHour);
-
     }
     return this.hourlyTotals;
   },
@@ -100,7 +98,6 @@ var southCenter = {
       this.hourlyTotals[i] = this.calcTotalPerHr();
       nextHour.innerHTML = this.times[i] + this.hourlyTotals[i];
       document.getElementById('southCenterList').appendChild(nextHour);
-
     }
     return this.hourlyTotals;
   },
@@ -141,7 +138,6 @@ var bellevueSquare = {
       this.hourlyTotals[i] = this.calcTotalPerHr();
       nextHour.innerHTML = this.times[i] + this.hourlyTotals[i];
       document.getElementById('bellevueSquareList').appendChild(nextHour);
-
     }
     return this.hourlyTotals;
   },
@@ -182,7 +178,6 @@ var alki = {
       this.hourlyTotals[i] = this.calcTotalPerHr();
       nextHour.innerHTML = this.times[i] + this.hourlyTotals[i];
       document.getElementById('alkiList').appendChild(nextHour);
-
     }
     return this.hourlyTotals;
   },
