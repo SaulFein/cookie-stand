@@ -28,7 +28,7 @@ var pikePlace = {
     for (var i = 0; i < this.hourlyTotals.length; i++) {
       total += this.hourlyTotals[i];
     }
-    document.getElementById('pikePlaceTotal').innerHTML = total;
+    document.getElementById('pikePlaceTotal').innerHTML = 'Total: ' + total;
   },
 
   renderAll: function () {
@@ -69,7 +69,7 @@ var seaTac = {
     for (var i = 0; i < this.hourlyTotals.length; i++) {
       total += this.hourlyTotals[i];
     }
-    document.getElementById('seaTacTotal').innerHTML = total;
+    document.getElementById('seaTacTotal').innerHTML = 'Total: ' + total;
   },
 
   renderAll: function () {
@@ -110,7 +110,7 @@ var southCenter = {
     for (var i = 0; i < this.hourlyTotals.length; i++) {
       total += this.hourlyTotals[i];
     }
-    document.getElementById('southCenterTotal').innerHTML = total;
+    document.getElementById('southCenterTotal').innerHTML = 'Total: ' + total;
   },
 
   renderAll: function () {
@@ -151,7 +151,7 @@ var bellevueSquare = {
     for (var i = 0; i < this.hourlyTotals.length; i++) {
       total += this.hourlyTotals[i];
     }
-    document.getElementById('bellevueSquareTotal').innerHTML = total;
+    document.getElementById('bellevueSquareTotal').innerHTML = 'Total: ' + total;
   },
 
   renderAll: function () {
@@ -192,7 +192,7 @@ var alki = {
     for (var i = 0; i < this.hourlyTotals.length; i++) {
       total += this.hourlyTotals[i];
     }
-    document.getElementById('alkiTotal').innerHTML = total;
+    document.getElementById('alkiTotal').innerHTML = 'Total: ' + total;
   },
 
   renderAll: function () {
