@@ -1,0 +1,81 @@
+
+#highlights{
+  font-family: 'Righteous', cursive;
+  color: #DC3522;
+}
+
+#data{
+  font-family: 'Arial';
+  color: #91A1D9;
+}
+
+#text{
+  font-family: 'Times';
+  color: #D9CB9E;
+}
+
+#background{
+  color: #DC3522;
+}
+
+* {
+   background-color: #374140;
+}
+
+.boxed {
+  display: table;
+  width: 200px;
+  height: 50px;
+  background: #2A2C2B;
+  color: #91A1D9;
+}
+
+h3 {
+  font-family: 'Times';
+  color: #D9CB9E;
+}
+
+#pikePlaceList{
+  font-family: 'Arial';
+  color: #91A1D9;
+}
+#pikePlaceTotal{
+  font-family: 'Arial';
+  color: #91A1D9;
+}
+
+#seaTacList{
+  font-family: 'Arial';
+  color: #91A1D9;
+}
+#seaTacTotal{
+  font-family: 'Arial';
+  color: #91A1D9;
+}
+
+#southCenterList{
+  font-family: 'Arial';
+  color: #91A1D9;
+}
+#southCenterTotal{
+  font-family: 'Arial';
+  color: #91A1D9;
+}
+
+#bellevueSquareList{
+  font-family: 'Arial';
+  color: #91A1D9;
+}
+#bellevueSquareTotal{
+  font-family: 'Arial';
+  color: #91A1D9;
+}
+
+#alkiList{
+  font-family: 'Arial';
+  color: #91A1D9;
+}
+#alkiTotal{
+  font-family: 'Arial';
+  color: #91A1D9;
+}
