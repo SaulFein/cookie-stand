@@ -1,4 +1,5 @@
 var pikePlace = {
+  storeLocation: "Pike Place Market",
   times: ['10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: '],
   minCustHr: 17,
   maxCustHr: 88,
@@ -39,6 +40,7 @@ var pikePlace = {
 }
 
 var seaTac = {
+  storeLocation: "Sea Tac Airport",
   times: ['10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: '],
   minCustHr: 6,
   maxCustHr: 44,
@@ -79,6 +81,7 @@ var seaTac = {
 }
 
 var southCenter = {
+  storeLocation: "South Center Mall",
   times: ['10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: '],
   minCustHr: 6,
   maxCustHr: 44,
@@ -119,6 +122,7 @@ var southCenter = {
 }
 
 var bellevueSquare = {
+  storeLocation: "Bellevue Square Mall",
   times: ['10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: '],
   minCustHr: 6,
   maxCustHr: 44,
@@ -159,6 +163,7 @@ var bellevueSquare = {
 }
 
 var alki = {
+  storeLocation: "Alki Beach",
   times: ['10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: '],
   minCustHr: 6,
   maxCustHr: 44,
