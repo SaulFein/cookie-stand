@@ -25,10 +25,12 @@ var pikePlace = {
 
   getDailyTotal: function() {
     var total = 0;
+    var addTotal = document.createElement('li')
     for (var i = 0; i < this.hourlyTotals.length; i++) {
       total += this.hourlyTotals[i];
     }
-    document.getElementById('pikePlaceTotal').innerHTML = 'Total: ' + total;
+    addTotal.innerHTML = ('Total: ' + total);
+    document.getElementById('pikePlaceList').appendChild(addTotal);
   },
 
   renderAll: function () {
@@ -66,10 +68,12 @@ var seaTac = {
 
   getDailyTotal: function() {
     var total = 0;
+    var addTotal = document.createElement('li')
     for (var i = 0; i < this.hourlyTotals.length; i++) {
       total += this.hourlyTotals[i];
     }
-    document.getElementById('seaTacTotal').innerHTML = 'Total: ' + total;
+    addTotal.innerHTML = ('Total: ' + total);
+    document.getElementById('seaTacList').appendChild(addTotal);
   },
 
   renderAll: function () {
@@ -107,10 +111,12 @@ var southCenter = {
 
   getDailyTotal: function() {
     var total = 0;
+    var addTotal = document.createElement('li')
     for (var i = 0; i < this.hourlyTotals.length; i++) {
       total += this.hourlyTotals[i];
     }
-    document.getElementById('southCenterTotal').innerHTML = 'Total: ' + total;
+    addTotal.innerHTML = ('Total: ' + total);
+    document.getElementById('southCenterList').appendChild(addTotal);
   },
 
   renderAll: function () {
@@ -148,10 +154,12 @@ var bellevueSquare = {
 
   getDailyTotal: function() {
     var total = 0;
+    var addTotal = document.createElement('li')
     for (var i = 0; i < this.hourlyTotals.length; i++) {
       total += this.hourlyTotals[i];
     }
-    document.getElementById('bellevueSquareTotal').innerHTML = 'Total: ' + total;
+    addTotal.innerHTML = ('Total: ' + total);
+    document.getElementById('bellevueSquareList').appendChild(addTotal);
   },
 
   renderAll: function () {
@@ -189,10 +197,12 @@ var alki = {
 
   getDailyTotal: function() {
     var total = 0;
+    var addTotal = document.createElement('li')
     for (var i = 0; i < this.hourlyTotals.length; i++) {
       total += this.hourlyTotals[i];
     }
-    document.getElementById('alkiTotal').innerHTML = 'Total: ' + total;
+    addTotal.innerHTML = ('Total: ' + total);
+    document.getElementById('alkiList').appendChild(addTotal);
   },
 
   renderAll: function () {
