@@ -1,0 +1,31 @@
+
+#highlights{
+  font-family: 'Righteous', cursive;
+  color: #DC3522;
+}
+
+#data{
+  font-family: 'Arial';
+  color: #91A1D9;
+}
+
+#text{
+  font-family: 'Times';
+  color: #D9CB9E;
+}
+
+#background{
+  color: #DC3522;
+}
+
+* {
+   background-color: #374140;
+}
+
+.boxed {
+  display: table;
+  width: 200px;
+  height: 50px;
+  background: #2A2C2B;
+  color: #91A1D9;
+}
