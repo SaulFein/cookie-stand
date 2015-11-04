@@ -17,18 +17,12 @@ function CookieStand(storeLocation, minCustHr, maxCustHr, avgCookPerCust){
   this.getTotalsPerHr = function () {
     for (var i = 0; i < times.length; i++) {
       this.hourlyTotals[i] = this.calcTotalPerHr();
-    }
-    for (var i = 0; i < this.hourlyTotals.length; i++) {
       this.dailyTotal += this.hourlyTotals[i];
     }
-    return this.hourlyTotals;
-    return this.dailyTotal;
   };
   this.display = function (){
-    var trElement = document.createElement('tr');
     var trElement2 = document.createElement('tr');
     var thStoreName = document.createElement('th');
-
     thStoreName.textContent = this.storeLocation;
     trElement2.appendChild(thStoreName);
     for (var i = 0; i < times.length; i++) {
@@ -38,7 +32,6 @@ function CookieStand(storeLocation, minCustHr, maxCustHr, avgCookPerCust){
     }
     tdElement1.textContent = this.dailyTotal;
     trElement2.appendChild(tdElement1);
-    tbl.appendChild(trElement);
     tbl.appendChild(trElement2);
     document.body.appendChild(tbl);
   };
