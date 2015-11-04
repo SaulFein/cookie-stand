@@ -23,6 +23,7 @@ function CookieStand(storeLocation, minCustHr, maxCustHr, avgCookPerCust){
       this.dailyTotal += this.hourlyTotals[i];
     }
   };
+
   this.display = function (){
     var trElement2 = document.createElement('tr');
     var thStoreName = document.createElement('th');
@@ -96,9 +97,8 @@ var handleNewShopSubmit = function(event) {
 
    console.log('New shop ' + event.target.locname.value);
 
-   newShop.renderAll();
-
-}
+      newShop.renderAll();
+    };
 
 locationForm.addEventListener('submit', handleNewShopSubmit);
 
