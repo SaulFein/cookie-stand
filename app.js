@@ -1,4 +1,4 @@
-var times = ['10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', 'Total'];
+var times = ['10am ', '11am ', '12pm ', '1pm ', '2pm ', '3pm ', '4pm ', '5pm ', 'Total'];
 var tbl = document.createElement('table');
 
 function CookieStand(storeLocation, minCustHr, maxCustHr, avgCookPerCust){
