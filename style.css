@@ -1,7 +1,25 @@
+#topheader {
+  background-color: #2A2C2B;
+  /*height: 140px;*/
+  margin: 0 auto;
+  padding: 10;
+  position: relative;
+  width: 1100px;
+}
 
 #highlights{
   font-family: 'Righteous', cursive;
   color: #DC3522;
+}
+
+#familyphoto {
+  float: right;
+  height: 50%;
+  width: 50%;
+}
+
+#tshirts {
+
 }
 
 #data{
@@ -13,13 +31,35 @@
   font-family: 'Times';
   color: #D9CB9E;
 }
-
+#links {
+  float: left;
+  background-color: #2A2C2B;
+}
 #background{
   color: #DC3522;
 }
 
-* {
+#bigfish{
+  clear: left;
+  float:right;
+}
+
+#fishies {
+  clear: right;
+  float:left;
+}
+
+body {
    background-color: #374140;
+}
+
+#history {
+  background-color: #2A2C2B;
+  float: right;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .boxed {
@@ -39,6 +79,7 @@ h3 {
   font-family: 'Arial';
   color: #91A1D9;
 }
+
 #pikePlaceTotal{
   font-family: 'Arial';
   color: #91A1D9;

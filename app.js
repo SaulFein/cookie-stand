@@ -1,7 +1,7 @@
 var times = ['10am ', '11am ', '12pm ', '1pm ', '2pm ', '3pm ', '4pm ', '5pm ', 'Total'];
 var tbl = document.createElement('table');
 var locations = [];
-// var tableSpot = document.getElementById('tablespot');
+var tableSpot = document.getElementById('tablespot');
 
 function CookieStand(storeLocation, minCustHr, maxCustHr, avgCookPerCust){
   this.storeLocation = storeLocation;
@@ -40,8 +40,8 @@ function CookieStand(storeLocation, minCustHr, maxCustHr, avgCookPerCust){
     tdElement1.textContent = this.dailyTotal;
     trElement2.appendChild(tdElement1);
     tbl.appendChild(trElement2);
-    document.body.appendChild(tbl);
-    // document.tablespot.appendChild(tbl);
+    // document.body.appendChild(tbl);
+    tablespot.appendChild(tbl);
   }
 
   this.renderAll = function(){
@@ -77,8 +77,8 @@ function displayAllLocations(){
 for (var i = 0; i < locations.length; i++) {
     locations[i].renderAll();
   }
-  document.body.appendChild(tbl);
-  // document.tablespot.appendChild(tbl);
+  // document.body.appendChild(tbl);
+  tablespot.appendChild(tbl);
 }
 
 displayAllLocations();
