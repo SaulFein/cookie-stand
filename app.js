@@ -1,6 +1,7 @@
 var times = ['10am ', '11am ', '12pm ', '1pm ', '2pm ', '3pm ', '4pm ', '5pm ', 'Total'];
 var tbl = document.createElement('table');
 var locations = [];
+// var tableSpot = document.getElementById('tablespot');
 
 function CookieStand(storeLocation, minCustHr, maxCustHr, avgCookPerCust){
   this.storeLocation = storeLocation;
@@ -11,15 +12,15 @@ function CookieStand(storeLocation, minCustHr, maxCustHr, avgCookPerCust){
   this.dailyTotal = 0;
   locations.push(this); //taking the object and pushing it into an array. (this refers to the object)
 
-  this.calcRandHrlyCust = function() {
+  this.calcRandHrlyCust = function(){
     return Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1) + this.minCustHr);
   }
 
-  this.calcTotalPerHr = function() {
+  this.calcTotalPerHr = function(){
     return Math.ceil(this.calcRandHrlyCust() * this.avgCookPerCust);
   }
 
-  this.getTotalsPerHr = function() {
+  this.getTotalsPerHr = function(){
     for (var i = 0; i < times.length; i++) {
       this.hourlyTotals[i] = this.calcTotalPerHr();
       this.dailyTotal += this.hourlyTotals[i];
@@ -40,9 +41,10 @@ function CookieStand(storeLocation, minCustHr, maxCustHr, avgCookPerCust){
     trElement2.appendChild(tdElement1);
     tbl.appendChild(trElement2);
     document.body.appendChild(tbl);
+    // document.tablespot.appendChild(tbl);
   }
 
-  this.renderAll = function() {
+  this.renderAll = function(){
     this.calcRandHrlyCust();
     this.calcTotalPerHr();
     this.getTotalsPerHr();
@@ -76,6 +78,7 @@ for (var i = 0; i < locations.length; i++) {
     locations[i].renderAll();
   }
   document.body.appendChild(tbl);
+  // document.tablespot.appendChild(tbl);
 }
 
 displayAllLocations();
@@ -86,7 +89,7 @@ var minCust = document.getElementById('mincust');
 var maxCust = document.getElementById('maxcust');
 var avgCook = document.getElementById('avgcook');
 
-var handleNewShopSubmit = function(event) {
+var handleNewShopSubmit = function(event){
   event.preventDefault();
 
   var storeLocation = event.target.locname.value;
