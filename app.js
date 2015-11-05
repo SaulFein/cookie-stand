@@ -9,22 +9,24 @@ function CookieStand(storeLocation, minCustHr, maxCustHr, avgCookPerCust){
   this.avgCookPerCust = avgCookPerCust;
   this.hourlyTotals = [];
   this.dailyTotal = 0;
-  locations.push(this);
+  locations.push(this); //taking the object and pushing it into an array. (this refers to the object)
 
-  this.calcRandHrlyCust = function () {
+  this.calcRandHrlyCust = function() {
     return Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1) + this.minCustHr);
-  };
-  this.calcTotalPerHr = function () {
+  }
+
+  this.calcTotalPerHr = function() {
     return Math.ceil(this.calcRandHrlyCust() * this.avgCookPerCust);
-  };
-  this.getTotalsPerHr = function () {
+  }
+
+  this.getTotalsPerHr = function() {
     for (var i = 0; i < times.length; i++) {
       this.hourlyTotals[i] = this.calcTotalPerHr();
       this.dailyTotal += this.hourlyTotals[i];
     }
-  };
+  }
 
-  this.display = function (){
+  this.display = function(){
     var trElement2 = document.createElement('tr');
     var thStoreName = document.createElement('th');
     thStoreName.textContent = this.storeLocation;
@@ -38,28 +40,28 @@ function CookieStand(storeLocation, minCustHr, maxCustHr, avgCookPerCust){
     trElement2.appendChild(tdElement1);
     tbl.appendChild(trElement2);
     document.body.appendChild(tbl);
-  };
+  }
 
-  this.renderAll = function () {
+  this.renderAll = function() {
     this.calcRandHrlyCust();
     this.calcTotalPerHr();
     this.getTotalsPerHr();
     this.display();
-  };
-};
+  }
+}
 
-var setUpTable = function (){
-    var trElement = document.createElement('tr');
-    var tdLocation = document.createElement('th');
-    tdLocation.textContent = ('Location');
-    trElement.appendChild(tdLocation);
-    tbl.appendChild(trElement);
-    for (var i = 0; i < times.length; i++) {
-      var thElement = document.createElement('th');
-      thElement.textContent = times[i];
-      trElement.appendChild(thElement);
-    }
-  };
+var setUpTable = function(){
+  var trElement = document.createElement('tr');
+  var tdLocation = document.createElement('th');
+  tdLocation.textContent = ('Location');
+  trElement.appendChild(tdLocation);
+  tbl.appendChild(trElement);
+  for (var i = 0; i < times.length; i++) {
+    var thElement = document.createElement('th');
+    thElement.textContent = times[i];
+    trElement.appendChild(thElement);
+  }
+}
 
 var pikePlace = new CookieStand ("Pike Place", 17, 88, 5.2);
 var seaTac = new CookieStand ("Sea Tac", 8, 44, 1.2);
@@ -84,21 +86,20 @@ var minCust = document.getElementById('mincust');
 var maxCust = document.getElementById('maxcust');
 var avgCook = document.getElementById('avgcook');
 
-
 var handleNewShopSubmit = function(event) {
   event.preventDefault();
 
-   var storeLocation = event.target.locname.value;
-   var minCustHr = event.target.mincust.value;
-   var maxCustHr = event.target.maxcust.value;
-   var avgCookPerCust = event.target.avgcook.value;
+  var storeLocation = event.target.locname.value;
+  var minCustHr = event.target.mincust.value;
+  var maxCustHr = event.target.maxcust.value;
+  var avgCookPerCust = event.target.avgcook.value;
 
-   var newShop = new CookieStand(storeLocation, minCustHr, maxCustHr, avgCookPerCust);
+  var newShop = new CookieStand(storeLocation, minCustHr, maxCustHr, avgCookPerCust);
 
-   console.log('New shop ' + event.target.locname.value);
+  console.log('New shop ' + event.target.locname.value);
 
-      newShop.renderAll();
-    };
+  newShop.renderAll();
+}
 
 locationForm.addEventListener('submit', handleNewShopSubmit);
 
