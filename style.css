@@ -1,7 +1,40 @@
+#topheader {
+  background-color: #2A2C2B;
+  /*height: 140px;*/
+  margin: 0 auto;
+  padding-top: 1%;
+  padding-bottom:1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: 3%;
+  margin-right: 3%;
+  position: relative;
+  width: 1300px;
+}
 
 #highlights{
   font-family: 'Righteous', cursive;
   color: #DC3522;
+}
+
+#familyphoto {
+  /*float: right;*/
+  height: 50%;
+  width: 50%;
+}
+
+#locationlist {
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#tshirts {
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 #data{
@@ -14,12 +47,40 @@
   color: #D9CB9E;
 }
 
+#links {
+  margin: auto;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: 3%;
+  margin-right: 3%;
+  background-color: #2A2C2B;
+}
+
 #background{
   color: #DC3522;
 }
 
-* {
+#bigfish{
+  clear: left;
+  float:right;
+}
+
+#fishies {
+  clear: right;
+  float:left;
+}
+
+body {
    background-color: #374140;
+}
+
+#history {
+  background-color: #2A2C2B;
+  float: right;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .boxed {
@@ -39,6 +100,7 @@ h3 {
   font-family: 'Arial';
   color: #91A1D9;
 }
+
 #pikePlaceTotal{
   font-family: 'Arial';
   color: #91A1D9;
