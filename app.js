@@ -106,3 +106,59 @@ var handleNewShopSubmit = function(event){
 
 locationForm.addEventListener('submit', handleNewShopSubmit);
 
+function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(47.606662, -122.331107),
+          zoom: 10,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var pikePlaceLatLng = {lat: 47.609648, lng: -122.342172};
+        var seaTacLatLng = {lat: 47.450366, lng: -122.308795};
+        var southCenterLatLng = {lat: 47.458288, lng: -122.258630};
+        var bellevueLatLng = {lat: 47.615508, lng: -122.203617};
+        var alkiLatLng = {lat: 47.574784, lng: -122.408822};
+
+        var iconBase = 'img/';
+
+        function addMarker(feature) {
+          var marker = new google.maps.Marker({
+          position: feature.position,
+          icon: icons[feature.type].icon,
+          map: map
+          });
+        }
+
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var pikePlaceMarker = new google.maps.Marker({
+          position: pikePlaceLatLng,
+          map: map,
+          icon: 'img/smallcook.png',
+          title: 'Pike Place!'
+        });
+        var seaTacMarker = new google.maps.Marker({
+          position: seaTacLatLng,
+          map: map,
+          icon: iconBase + 'smallcook.png',
+          title: 'Sea Tac!'
+        });
+        var southCenterMarker = new google.maps.Marker({
+          position: southCenterLatLng,
+          map: map,
+          icon: iconBase + 'smallcook.png',
+          title: 'Southcenter Mall!'
+        });
+        var bellevueMarker = new google.maps.Marker({
+          position: bellevueLatLng,
+          map: map,
+          icon: iconBase + 'smallcook.png',
+          title: 'Bellevue Square Mall!'
+        });
+        var alkiMarker = new google.maps.Marker({
+          position: alkiLatLng,
+          map: map,
+          icon: iconBase + 'smallcook.png',
+          title: 'Alki!'
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
