@@ -1,0 +1,258 @@
+/*style2.css*/
+body {
+
+  width: 100%;
+  background-color: #D3CBBD;
+
+ /* max-width: 960px;*/
+
+  margin: 0 auto; }
+
+
+#topheader {
+  display: flex;
+ /* padding: 1%;*/
+  align-items: center;
+  background-color: black;
+  justify-content: space-around;
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  /*background-image: url("img/header.jpg");*/
+}
+
+#shop-name {
+  font-family: 'Courgette', cursive;
+  margin: auto;
+  font-size: 24px;
+  padding: 1%;
+  text-align: center;
+  color: white;
+}
+/*
+#navigation {
+
+}
+*/
+#highlights {
+/*  padding: 1%;*/
+}
+
+#slogan {
+  /*padding: 1%;*/
+  text-align: center;
+}
+
+#bigfish{
+  width: 200px;
+  height: 62.515883100381px;
+  padding: 1%;
+}
+
+/*http://www.sitepoint.com/building-an-interactive-navigation-bar/ */
+nav {
+
+  border-color: black;
+
+  border: 3px;
+
+  padding-top: 85px;
+
+  width: 100%;
+
+  margin: 20px 0; }
+
+nav ul {
+
+  list-style: none;
+
+  overflow: hidden; }
+
+nav ul li {
+
+color: white;
+  float: left;
+
+  width: 20%; }
+
+nav ul li a {
+
+/*  border: solid;*/
+  color: white;
+
+  text-align: center;
+
+  padding: 8px 0;
+
+  display: block;
+
+  width: 100%;
+
+  background: #cdeb8e; /* Old browsers */
+
+  background: -moz-linear-gradient(top, black 0%, black 100%); /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdeb8e), color-stop(100%,#b0ca34)); /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, black 0%,black 100%); /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, black 0%,black 100%); /* Opera 11.10+ */
+
+  background: linear-gradient(to bottom, black 0%,black 100%); /* W3C, IE10+ */
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#b0ca34',GradientType=0 ); /* IE6-9 */
+
+  endColorstr='#b0ca34',GradientType=0 ); /* IE6-9 */
+
+}
+
+ nav ul li a,
+
+ nav ul li a:focus,
+
+ nav ul li a:visited,
+
+ nav ul li a:hover,
+
+ nav ul li a:active {
+  color: white;
+  text-decoration: none; }
+
+nav ul li a:hover,
+
+nav ul li a:active {
+
+  background: #b0ca34; /* Old browsers */
+
+  background: -moz-linear-gradient(top, #243B3D 0%, #96c40d 100%); /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0ca34), color-stop(100%,#96c40d)); /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #243B3D 0%,#96c40d 100%); /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #243B3D 0%,#96c40d 100%); /* Opera 11.10+ */
+
+  background: linear-gradient(to bottom, #243B3D 0%,#96c40d 100%); /* W3C, IE10+ */
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0ca34', endColorstr='#96c40d',GradientType=0 ); /* IE6-9 */
+
+}
+
+nav ul li:first-child a {
+
+ /*border-top-left-radius: 8px;
+
+  border-bottom-left-radius: 8px;*/
+}
+
+nav ul li:last-child a {
+
+  /*border-top-right-radius: 8px;
+
+  border-bottom-right-radius: 8px;*/
+}
+
+#menu {
+  text-align: center;
+
+  color: black;
+}
+
+#locationlist {
+  padding-top: 100px;
+  color: black;
+  text-align: center;
+}
+
+#slogan {
+  color: black;
+}
+
+#history {
+  color: black;
+}
+
+#tshirts {
+  color: black;
+}
+
+#links {
+  color: black;
+}
+
+/*http://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/*/
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.swing:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}

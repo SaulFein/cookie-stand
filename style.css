@@ -3,7 +3,7 @@ body {
   background-image: url("img/darkwood.png");
 }
 
-#topheader {
+.topheader {
   position: fixed;
   top: 0;
   left: 0;
@@ -34,6 +34,15 @@ body {
   padding-bottom: 2%;
 }
 
+#navigation{
+  display: inherit;
+  height: 40px;
+  background: black;
+  color: blue;
+  width: 1000px;
+  margin: auto;
+}
+/*
 #locationlist {
   padding-top: 7%;
   padding-left: 1%;
@@ -44,7 +53,7 @@ body {
 
 #familyphoto {
   /*float: right;*/
-  height: 50%;
+ /* height: 50%;
   width: 50%;
 }
 
@@ -150,3 +159,4 @@ h3 {
   font-family: 'Arial';
   color: #91A1D9;
 }
+*/*/
