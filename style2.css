@@ -15,7 +15,7 @@ body {
   align-items: center;
   background-color: black;
   justify-content: space-around;
-  height: 90px;
+  height: 85px;
   width: 100%;
   position: fixed;
   z-index: 2
@@ -26,9 +26,10 @@ body {
   font-family: 'Courgette', cursive;
   margin: auto;
   font-size: 24px;
-  padding: 1%;
+
   text-align: center;
   color: white;
+
 }
 /*
 #navigation {
@@ -49,7 +50,8 @@ body {
 #bigfish{
   width: 200px;
   height: 62.515883100381px;
-  padding: 1%;
+  padding-top: 0.25%;
+  padding-right: 1%;
 }
 
 #bigfish2{
@@ -66,9 +68,11 @@ body {
 
 
 #history {
+  padding: 2%;
   width: 75%;
   color: black;
   margin: auto;
+  background-image: url("img/brownback.jpg");
 }
 /*http://www.sitepoint.com/building-an-interactive-navigation-bar/ */
 nav {
@@ -77,7 +81,7 @@ nav {
 
   border: 3px;
 
-  padding-top: 85px;
+  padding-top: 79px;
 
   width: 100%;
 
@@ -90,7 +94,7 @@ nav ul {
   overflow: hidden; }
 
 nav ul li {
-
+  /*height: 100px;*/
 color: white;
   float: left;
 
@@ -179,6 +183,14 @@ nav ul li:last-child a {
   color: black;
 }
 
+#menu ul {
+  list-style-image: url("img/smallcookbull.png");
+}
+
+#menu li {
+  margin: 10px 0px 0px 0px;
+}
+
 #menu h4 {
   padding-top: 50px;
   text-align: center;
@@ -196,10 +208,16 @@ nav ul li:last-child a {
 
 }
 
+#locationspoition{
+  padding: 10%;
+}
+
 #locationstitle {
 /*  margin: auto;*/
   text-align: center;
   font-family: 'Courgette', cursive;
+  padding-top: 2%;
+  padding-bottom: 0%;
 }
 
 #locationlist {
@@ -212,8 +230,18 @@ nav ul li:last-child a {
   justify-content: space-around;
 }
 
+#locationlist ul {
+  list-style-image: url("img/smallcookbull.png");
+}
+
+#locationlist li {
+  margin: 10px 0px 0px 0px;
+}
+
 #tshirts {
   color: black;
+
+
 }
 
 #links {
@@ -229,6 +257,15 @@ nav ul li:last-child a {
   padding-top: 50px;
   display: flex;
   justify-content: space-around;
+}
+
+#contact {
+  margin: auto;
+  text-align: center;
+}
+
+#contact h4 {
+  margin-bottom: 0px;
 }
 
 /*http://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/*/
