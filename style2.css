@@ -175,7 +175,14 @@ nav ul li:last-child a {
 
 #menu {
   text-align: center;
+  /*font-family: 'Courgette', cursive;*/
+  color: black;
+}
 
+#menu h4 {
+  padding-top: 50px;
+  text-align: center;
+  font-family: 'Courgette', cursive;
   color: black;
 }
 
@@ -183,16 +190,26 @@ nav ul li:last-child a {
   width: 500px;
   height: 400px;
   background-color: #CCC;
-  margin: auto;
-  position: relative;
+/*  margin: auto;
+  position: relative;*/
   z-index: 1;
 
 }
 
-#locationlist {
+#locationstitle {
+/*  margin: auto;*/
+  text-align: center;
+  font-family: 'Courgette', cursive;
+}
 
+#locationlist {
+  display: flex;
+  align-items: center;
   color: black;
   text-align: center;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
 }
 
 #tshirts {
@@ -201,6 +218,17 @@ nav ul li:last-child a {
 
 #links {
   color: black;
+}
+
+#familyphoto {
+  /*width: 400px;
+  height: 225.35211267606px;*/
+}
+
+#bottom {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*http://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/*/

@@ -24,14 +24,17 @@
         var southCenterLatLng = {lat: 47.458288, lng: -122.258630};
         var bellevueLatLng = {lat: 47.615508, lng: -122.203617};
         var alkiLatLng = {lat: 47.574784, lng: -122.408822};
+
         var iconBase = 'img/';
+
         function addMarker(feature) {
-  var marker = new google.maps.Marker({
-    position: feature.position,
-    icon: icons[feature.type].icon,
-    map: map
-  });
-}
+          var marker = new google.maps.Marker({
+          position: feature.position,
+          icon: icons[feature.type].icon,
+          map: map
+          });
+        }
+
         var map = new google.maps.Map(mapCanvas, mapOptions)
         var pikePlaceMarker = new google.maps.Marker({
           position: pikePlaceLatLng,
@@ -94,7 +97,7 @@
   </ul>
 </nav>
 
- <img id = "bigfish" class = "swing" src="img/salmon.png" alt="salmon">
+ <img id = "bigfish" src="img/salmon.png" alt="salmon">
 </header>
 
 <div id = "bigfish2">
@@ -108,20 +111,24 @@
 <p>Triplefin blenny Blobfish lined sole, Pacific salmon firefish, "lenok tonguefish," dragonet zebra turkeyfish. Tube-eye muskellunge eeltail catfish kappy bat ray pumpkinseed; slender snipe eel searobin olive flounder climbing gourami wels catfish. Sacramento blackfish, spiny dwarf catfish. Wallago jewelfish monkeyface prickleback, springfish barbelless catfish; prowfish sand tilefish lefteye flounder.</p><p>Northern pearleye prowfish northern pike ziege crocodile icefish starry flounder lefteye flounder; bluefin tuna black dragonfish leatherjacket armored gurnard pleco. Sailbearer, lionfish, rock beauty! Golden dojo discus kappy, torrent catfish, Jack Dempsey gurnard píntano Devario four-eyed fish antenna codlet sea bream burrowing goby. Bighead carp gurnard, Steve fish; mud cat.</p>
 </div>
 
+<div id = "locationstitle">
+  <h2>Our Delicious Locations</h2>
+  <h5>All locations are open Monday - Saturday from 10am - 6pm.</h5>
+</div>
 
 <section id ="locationlist">
-<h5>All locations are open Monday - Saturday from 10am - 6pm.</h5>
-<h2>Locations:</h2>
 <ul>
-  <li>Pike Place</li>
-  <li>Sea Tac</li>
-  <li>Southcenter</li>
-  <li>Bellevue Square</li>
-  <li>Alki</li>
+  <li>Pike Place Market<br />85 Pike St<br />Seattle, WA 98101<br />206-555-5555</li>
+  <li>Sea-Tac Airport<br />17801 International Blvd<br />Seattle, WA 98158<br />206-555-5555</li>
+  <li>Southcenter Mall<br />2800 Southcenter Mall<br />Seattle, WA 98188<br />206-555-5555</li>
+  <li>Bellevue Square<br />575 Bellevue Way NE<br />Bellevue, WA 98004<br />425-555-5555</li>
+  <li>Alki<br />2620 Alki Ave SW<br />Seattle, WA 98116<br />206-555-5555</li>
 </ul>
-</section>
 
 <div id="map"></div>
+
+</section>
+
 
 <section id = "menu">
   <h4>Cookie Selection</h4>
@@ -133,22 +140,23 @@
 
 </section>
 
+<div id = "bottom">
 <section id = "tshirts">
 <h3>Buy fish shirts!:</h3>
 
 <img src = "img/shirt.jpg" alt = "shirt" weight = "200px" height = "200px">
 </section>
-
+ <div id ="familyphoto">
+<img src = "img/family.jpg" alt = "family" width = "500" height = "281.69014084507">
+</div>
 <footer id = "links">
 <h3>Salmon Links:</h3>
   <ul>
     <li><a href="http://salmondays.org/">Issaquah Salmon Days</a></li>
     <li><a href="http://salmonfestseattle.com/home/event-calendar/">Salmon Fest</a></li>
   </ul>
-  <div id ="familyphoto">
-<img src = "img/family.jpg" alt = "family" width = "300" height = "169.01408450704">
-</div>
 </footer>
+</div>
 
 </body>
 
