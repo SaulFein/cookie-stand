@@ -2,7 +2,8 @@
 body {
 
   width: 100%;
-  background-color: #D3CBBD;
+ /* background-color: #D3CBBD;*/
+ background-image: url("img/tanback.jpg");
 
  /* max-width: 960px;*/
 
@@ -13,7 +14,7 @@ body {
   display: flex;
  /* padding: 1%;*/
   align-items: center;
-  background-color: black;
+  background-color: #3B2215;
   justify-content: space-around;
   height: 85px;
   width: 100%;
@@ -28,10 +29,14 @@ body {
   font-size: 24px;
 
   text-align: center;
-  color: white;
+  color: #FFC48A;
 
 }
-/*
+
+#fishies {
+  float: right;
+}
+
 #navigation {
 
 }
@@ -66,13 +71,26 @@ body {
   display:block;
 }
 
+#locationgroup {
+  margin:auto;
+  background-color: #3B2215;
+  width: 70%
+}
 
 #history {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  padding-top: 50px;
   padding: 2%;
   width: 75%;
   color: black;
   margin: auto;
-  background-image: url("img/brownback.jpg");
+  background-image: url("img/cutback3.jpg");
+}
+
+#history p:first-letter {
+  font-size: 200%;
 }
 /*http://www.sitepoint.com/building-an-interactive-navigation-bar/ */
 nav {
@@ -95,15 +113,15 @@ nav ul {
 
 nav ul li {
   /*height: 100px;*/
-color: white;
+color: #FFC48A;
   float: left;
-
+font-family: 'Courgette', cursive;
   width: 20%; }
 
 nav ul li a {
 
 /*  border: solid;*/
-  color: white;
+  color: #FFC48A;
 
   text-align: center;
 
@@ -113,21 +131,21 @@ nav ul li a {
 
   width: 100%;
 
-  background: #cdeb8e; /* Old browsers */
+  background: #3B2215; /* Old browsers */
 
-  background: -moz-linear-gradient(top, black 0%, black 100%); /* FF3.6+ */
+  background: -moz-linear-gradient(top, #3B2215 0%, #3B2215 100%); /* FF3.6+ */
 
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdeb8e), color-stop(100%,#b0ca34)); /* Chrome,Safari4+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,##3B2215), color-stop(100%,##3B2215)); /* Chrome,Safari4+ */
 
-  background: -webkit-linear-gradient(top, black 0%,black 100%); /* Chrome10+,Safari5.1+ */
+  background: -webkit-linear-gradient(top, #3B2215 0%,#3B2215 100%); /* Chrome10+,Safari5.1+ */
 
-  background: -o-linear-gradient(top, black 0%,black 100%); /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #3B2215 0%,#3B2215 100%); /* Opera 11.10+ */
 
-  background: linear-gradient(to bottom, black 0%,black 100%); /* W3C, IE10+ */
+  background: linear-gradient(to bottom, #3B2215 0%,#3B2215 100%); /* W3C, IE10+ */
 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#b0ca34',GradientType=0 ); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3B2215', endColorstr='#3B2215',GradientType=0 ); /* IE6-9 */
 
-  endColorstr='#b0ca34',GradientType=0 ); /* IE6-9 */
+  endColorstr='#3B2215',GradientType=0 ); /* IE6-9 */
 
 }
 
@@ -140,7 +158,7 @@ nav ul li a {
  nav ul li a:hover,
 
  nav ul li a:active {
-  color: white;
+  color: #FFC48A;
   text-decoration: none; }
 
 nav ul li a:hover,
@@ -177,22 +195,29 @@ nav ul li:last-child a {
   border-bottom-right-radius: 8px;*/
 }
 
+
+
 #menu {
-  text-align: center;
+  margin: auto;
+/*  text-align: center;
+*/  font-family: 'Open Sans', sans-serif;
   /*font-family: 'Courgette', cursive;*/
   color: black;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 #menu ul {
   list-style-image: url("img/smallcookbull.png");
+  text-align: center;
 }
 
 #menu li {
   margin: 10px 0px 0px 0px;
 }
 
-#menu h4 {
-  padding-top: 50px;
+#menu h3 {
+  padding-top: 85px;
   text-align: center;
   font-family: 'Courgette', cursive;
   color: black;
@@ -218,40 +243,65 @@ nav ul li:last-child a {
   font-family: 'Courgette', cursive;
   padding-top: 2%;
   padding-bottom: 0%;
+  color: #FFC48A;
 }
 
 #locationlist {
+  font-family: 'Triocchi', sans-serif;
   display: flex;
   align-items: center;
-  color: black;
+  color: #FFC48A;
   text-align: center;
-  width: 80%;
+  width: 90%;
   margin: auto;
   justify-content: space-around;
 }
 
 #locationlist ul {
-  list-style-image: url("img/smallcookbull.png");
+  /*list-style-image: url("img/smallcookbull.png");*/
+  list-style-type: none;
 }
 
 #locationlist li {
-  margin: 10px 0px 0px 0px;
+  /*margin: 10px 0px 0px 0px;*/
 }
 
 #tshirts {
   color: black;
+  font-family: 'Courgette', cursive;
+  text-align: center;
+}
 
-
+#tshirts h6 {
+  color: black;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 #links {
   color: black;
+  font-family: 'Courgette', cursive;
+}
+
+#links li a{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+#links a:hover {
+    color: #F77A52;
 }
 
 #familyphoto {
   /*width: 400px;
   height: 225.35211267606px;*/
 }
+
 
 #bottom {
   padding-top: 50px;
@@ -262,11 +312,65 @@ nav ul li:last-child a {
 #contact {
   margin: auto;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+#contact a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+#contact a:hover {
+  color: #F77A52;
 }
 
 #contact h4 {
   margin-bottom: 0px;
+  font-family: 'Courgette', cursive;
 }
+
+#sales {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Open Sans', sans-serif;
+
+  padding: 2%;
+}
+
+#sales th{
+  font-family: 'Open Sans', sans-serif;
+   font-weight: 800;
+}
+
+#locationform {
+  padding: 2%;
+  /*margin-top: 100px;*/
+/*  margin: auto;*/
+  /*text-align: center;*/
+}
+
+#tabletitle {
+  padding-top: 3%;
+  margin: auto;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+}
+
+#createbutton {
+  font-family: 'Open Sans', sans-serif;
+   font-weight: 800;
+}
+
+table {
+  padding: 2%;
+ /* margin: 100px;*/
+}
+
 
 /*http://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/*/
 
