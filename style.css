@@ -255,11 +255,16 @@ nav ul li a:active {
 }
 
 #sales {
+  background-color: #3B2215;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   font-family: 'Open Sans', sans-serif;
   padding: 2%;
+  color: #FFC48A;
+  border: 1px solid black;
+  width: 75%;
+  margin: auto;
 }
 
 #sales th{
@@ -268,7 +273,18 @@ nav ul li a:active {
 }
 
 #locationform {
+  padding-top: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+#locationform input, textarea {
   padding: 2%;
+  background-color: #3B2215;
+}
+
+#locationform input, select, textarea{
+    color: #FFC48A;
 }
 
 #tabletitle {
@@ -281,6 +297,7 @@ nav ul li a:active {
 #createbutton {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
+  color: #FFC48A;
 }
 
 table {
@@ -425,3 +442,10 @@ table {
   background: black;
   color: #FFC48A;
 }
+
+#salesfish {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1%;
+}
+
