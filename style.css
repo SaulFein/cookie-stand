@@ -1,143 +1,427 @@
+
+body {
+  width: 100%;
+  background-image: url("img/tanback.jpg");
+  margin: 0 auto; }
+
 #topheader {
-  background-color: #2A2C2B;
-  /*height: 140px;*/
-  margin: 0 auto;
-  padding-top: 1%;
-  padding-bottom:1%;
-  padding-left: 1%;
-  padding-right: 1%;
-  margin-left: 3%;
-  margin-right: 3%;
-  position: relative;
-  width: 1300px;
+  display: flex;
+  align-items: center;
+  background-color: #3B2215;
+  justify-content: space-around;
+  height: 85px;
+  width: 100%;
+  position: fixed;
+  z-index: 2
 }
 
-#highlights{
-  font-family: 'Righteous', cursive;
-  color: #DC3522;
-}
-
-#familyphoto {
-  /*float: right;*/
-  height: 50%;
-  width: 50%;
-}
-
-#locationlist {
-  padding-left: 1%;
-  padding-right: 1%;
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-#tshirts {
-  padding-left: 1%;
-  padding-right: 1%;
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-#data{
-  font-family: 'Arial';
-  color: #91A1D9;
-}
-
-#text{
-  font-family: 'Times';
-  color: #D9CB9E;
-}
-
-#links {
+#shop-name {
+  font-family: 'Courgette', cursive;
   margin: auto;
-  padding-left: 1%;
-  padding-right: 1%;
-  margin-left: 3%;
-  margin-right: 3%;
-  background-color: #2A2C2B;
-}
-
-#background{
-  color: #DC3522;
-}
-
-#bigfish{
-  clear: left;
-  float:right;
+  font-size: 24px;
+  text-align: center;
+  color: #FFC48A;
 }
 
 #fishies {
-  clear: right;
-  float:left;
+  float: right;
 }
 
-body {
-   background-color: #374140;
+#slogan {
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  padding-top: 50px;
+  color: black;
+}
+
+#bigfish{
+  width: 200px;
+  height: 62.515883100381px;
+  padding-top: 0.25%;
+  padding-right: 1%;
+}
+
+#bigfish2{
+  padding-top: 100px;
+}
+
+#bigfish2 img{
+  width: 600px;
+  height: 187.54764930114px;
+  margin: auto;
+  display:block;
+}
+
+#locationgroup {
+  margin:auto;
+  background-color: #3B2215;
+  width: 70%
 }
 
 #history {
-  background-color: #2A2C2B;
-  float: right;
-  padding-left: 1%;
-  padding-right: 1%;
-  margin-left: 3%;
-  margin-right: 3%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  padding-top: 50px;
+  padding: 2%;
+  width: 75%;
+  color: black;
+  margin: auto;
+  background-image: url("img/cutback3.jpg");
 }
 
-.boxed {
-  display: table;
+#history p:first-letter {
+  font-size: 200%;
+}
+
+nav {
+  border-color: black;
+  border: 3px;
+  padding-top: 79px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+nav ul li {
+  color: #FFC48A;
+  float: left;
+  font-family: 'Courgette', cursive;
+  width: 20%;
+}
+
+nav ul li a {
+  color: #FFC48A;
+  text-align: center;
+  padding: 8px 0;
+  display: block;
+  width: 100%;
+  background: #3B2215; /* Old browsers */
+  background: -moz-linear-gradient(top, #3B2215 0%, #3B2215 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,##3B2215), color-stop(100%,##3B2215)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #3B2215 0%,#3B2215 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #3B2215 0%,#3B2215 100%); /* Opera 11.10+ */
+  background: linear-gradient(to bottom, #3B2215 0%,#3B2215 100%); /* W3C, IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3B2215', endColorstr='#3B2215',GradientType=0 ); /* IE6-9 */
+  endColorstr='#3B2215',GradientType=0 ); /* IE6-9 */
+}
+
+ nav ul li a,
+
+ nav ul li a:focus,
+
+ nav ul li a:visited,
+
+ nav ul li a:hover,
+
+ nav ul li a:active {
+  color: #FFC48A;
+  text-decoration: none; }
+
+nav ul li a:hover,
+
+nav ul li a:active {
+
+  background: #b0ca34; /* Old browsers */
+  background: -moz-linear-gradient(top, #331911 0%, #FF7E55 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#331911), color-stop(100%,#FF7E55)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #331911 0%,#FF7E55 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #331911 0%,#FF7E55 100%); /* Opera 11.10+ */
+  background: linear-gradient(to bottom, #331911 0%,#FF7E55 100%); /* W3C, IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#331911', endColorstr='#FF7E55',GradientType=0 ); /* IE6-9 */
+}
+
+#menu {
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#menu ul {
+  list-style-image: url("img/smallcookbull.png");
+  text-align: center;
+}
+
+#menu li {
+  margin: 10px 0px 0px 0px;
+}
+
+#menu h3 {
+  padding-top: 85px;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  color: black;
+}
+
+#map {
+  width: 500px;
+  height: 400px;
+  background-color: #CCC;
+  z-index: 1;
+}
+
+#locationspoition{
+  padding: 10%;
+}
+
+#locationstitle {
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  padding-top: 2%;
+  padding-bottom: 0%;
+  color: #FFC48A;
+}
+
+#locationlist {
+  font-family: 'Triocchi', sans-serif;
+  display: flex;
+  align-items: center;
+  color: #FFC48A;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+#locationlist ul {
+  list-style-type: none;
+}
+
+#tshirts {
+  color: black;
+  font-family: 'Courgette', cursive;
+  text-align: center;
+}
+
+#tshirts h6 {
+  color: black;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#links {
+  color: black;
+  font-family: 'Courgette', cursive;
+}
+
+#links li a{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+#links a:hover {
+    color: #F77A52;
+}
+
+#bottom {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact {
+  margin: auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+#contact a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+#contact a:hover {
+  color: #F77A52;
+}
+
+#contact h4 {
+  margin-bottom: 0px;
+  font-family: 'Courgette', cursive;
+}
+
+#sales {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Open Sans', sans-serif;
+  padding: 2%;
+}
+
+#sales th{
+  font-family: 'Open Sans', sans-serif;
+   font-weight: 800;
+}
+
+#locationform {
+  padding: 2%;
+}
+
+#tabletitle {
+  padding-top: 3%;
+  margin: auto;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+}
+
+#createbutton {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+table {
+  padding: 2%;
+}
+
+/*Fish swing*/
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.swing:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+
+#stylesheet {
+  padding: 5%;
+  width: 75%;
+}
+
+#stylesheet p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+#stylesheet h1, h2, h3, h4, h5 {
+  font-family: 'Courgette', cursive;
+}
+
+#stylesheet h2 {
+  color: #FFC48A;
+}
+
+#header1{
+  padding: 2%;
+}
+#ssh1 {
+  padding: 2%;
+  background-color: #3B2215
+  font-family: 'Courgette', cursive;
+  color: #FFC48A;
+}
+
+#ssh3 h3 p{
+  padding: 2%;
+  font-family: 'Open Sans', sans-serif;
+  color: #black;
+}
+
+#colorpalette{
+  display: flex;
+}
+
+#rectangle1 {
+  padding: 1%;
   width: 200px;
-  height: 50px;
-  background: #2A2C2B;
-  color: #91A1D9;
+  height: 100px;
+  background: #3B2215;
+  color: #FFC48A;
 }
 
-h3 {
-  font-family: 'Times';
-  color: #D9CB9E;
+#rectangle2 {
+  padding: 1%;
+  width: 200px;
+  height: 100px;
+  background: #FFC48A;
+  color: #3B2215;
 }
 
-#pikePlaceList{
-  font-family: 'Arial';
-  color: #91A1D9;
-}
-
-#pikePlaceTotal{
-  font-family: 'Arial';
-  color: #91A1D9;
-}
-
-#seaTacList{
-  font-family: 'Arial';
-  color: #91A1D9;
-}
-#seaTacTotal{
-  font-family: 'Arial';
-  color: #91A1D9;
-}
-
-#southCenterList{
-  font-family: 'Arial';
-  color: #91A1D9;
-}
-#southCenterTotal{
-  font-family: 'Arial';
-  color: #91A1D9;
-}
-
-#bellevueSquareList{
-  font-family: 'Arial';
-  color: #91A1D9;
-}
-#bellevueSquareTotal{
-  font-family: 'Arial';
-  color: #91A1D9;
-}
-
-#alkiList{
-  font-family: 'Arial';
-  color: #91A1D9;
-}
-#alkiTotal{
-  font-family: 'Arial';
-  color: #91A1D9;
+#rectangle3 {
+  padding: 1%;
+  width: 200px;
+  height: 100px;
+  background: black;
+  color: #FFC48A;
 }

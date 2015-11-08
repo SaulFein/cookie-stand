@@ -1,60 +1,170 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="style.css">
-<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="layout.css">
 
+<link href='https://fonts.googleapis.com/css?family=Trocchi|Courgette|Righteous|Slabo+27px|Open+Sans:400,800' rel='stylesheet' type='text/css'>
   <title>Pat's Salmon Cookies</title>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(47.606662, -122.331107),
+          zoom: 10,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var pikePlaceLatLng = {lat: 47.609648, lng: -122.342172};
+        var seaTacLatLng = {lat: 47.450366, lng: -122.308795};
+        var southCenterLatLng = {lat: 47.458288, lng: -122.258630};
+        var bellevueLatLng = {lat: 47.615508, lng: -122.203617};
+        var alkiLatLng = {lat: 47.574784, lng: -122.408822};
 
+        var iconBase = 'img/';
+
+        function addMarker(feature) {
+          var marker = new google.maps.Marker({
+          position: feature.position,
+          icon: icons[feature.type].icon,
+          map: map
+          });
+        }
+
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var pikePlaceMarker = new google.maps.Marker({
+          position: pikePlaceLatLng,
+          map: map,
+          icon: 'img/smallcook.png',
+          title: 'Pike Place!'
+        });
+        var seaTacMarker = new google.maps.Marker({
+          position: seaTacLatLng,
+          map: map,
+          icon: iconBase + 'smallcook.png',
+          title: 'Sea Tac!'
+        });
+        var southCenterMarker = new google.maps.Marker({
+          position: southCenterLatLng,
+          map: map,
+          icon: iconBase + 'smallcook.png',
+          title: 'Southcenter Mall!'
+        });
+        var bellevueMarker = new google.maps.Marker({
+          position: bellevueLatLng,
+          map: map,
+          icon: iconBase + 'smallcook.png',
+          title: 'Bellevue Square Mall!'
+        });
+        var alkiMarker = new google.maps.Marker({
+          position: alkiLatLng,
+          map: map,
+          icon: iconBase + 'smallcook.png',
+          title: 'Alki!'
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 
 <body>
 
 <header id = "topheader">
-  <img id = "bigfish" src="img/salmon.png" alt="salmon" width = "20%" height = "20%" align = "right">
-  <h1 id = "highlights">Pat's Salmon Cookies</h1>
-  <p>Salmon cookies made with fish, salmon cookies are delish!</p>
+  <p id ="shop-name">Pat's Salmon Cookies</p>
+ <nav>
+  <ul>
+    <li>
+       <a href="#menu">Cookie Selection</a>
+    </li>
+    <li>
+      <a href="#locationsposition">Locations</a>
+    </li>
+    <li>
+      <a href="#tshirts">Merchandise</a>
+    </li>
+    <li>
+      <a href="#slogan">About</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+ <img id = "bigfish" src="img/salmon.png" alt="salmon">
 </header>
 
-<section id ="locationlist">
-<h3>All locations are open Monday - Saturday from 10am - 6pm.</h3>
-<h2>Locations:</h2>
-<ul>
-  <li>Pike Place</li>
-  <li>Sea Tac</li>
-  <li>Southcenter</li>
-  <li>Bellevue Square</li>
-  <li>Alki</li>
-</ul>
-</section>
+<div id = "bigfish2">
+  <img class = "swing" src="img/salmon.png">
+</div>
+
+<h5 id = "slogan">Salmon cookies made with fish, salmon cookies are delish!</h5>
 
 <div id = "history">
-<p><img id ="fishies" src="img/fishies.png" alt="fishies" width="100" height="100">Ghoul salmon shark marlin. Dusky grouper blue shark stargazer California smoothtongue oarfish, Australian grayling moray eel dartfish eel-goby snailfish orangespine unicorn fish Asian carps triplespine warty angler. Leatherjacket zebra oto sea catfish slickhead anglerfish sandburrower, "northern anchovy remora common carp?" Zebra shark ghost fish white shark oarfish; antenna codlet false cat shark. Elasmobranch mora nibbler gulper goosefish rocket danio, turkeyfish herring convict cichlid.</p><p>California smoothtongue Red salmon zebra bullhead shark sailback scorpionfish rocket danio. Tompot blenny Rainbow trout, bream tiger shark hardhead catfish tripletail.</p>
-<p>Triplefin blenny Blobfish lined sole, Pacific salmon firefish, "lenok tonguefish," dragonet zebra turkeyfish. Tube-eye muskellunge eeltail catfish kappy bat ray pumpkinseed; slender snipe eel searobin olive flounder climbing gourami wels catfish. Sacramento blackfish, spiny dwarf catfish. Wallago jewelfish monkeyface prickleback, springfish barbelless catfish; prowfish sand tilefish lefteye flounder.</p><p>Northern pearleye prowfish northern pike ziege crocodile icefish starry flounder lefteye flounder; bluefin tuna black dragonfish leatherjacket armored gurnard pleco. Sailbearer, lionfish, rock beauty! Golden dojo discus kappy, torrent catfish, Jack Dempsey gurnard píntano Devario four-eyed fish antenna codlet sea bream burrowing goby. Bighead carp gurnard, Steve fish; mud cat.</p>
+  <p id = "bigh">History of the Salmon Cookie! Ghoul salmon shark marlin. Dusky grouper blue shark stargazer California smoothtongue oarfish, Australian grayling moray eel dartfish eel-goby snailfish orangespine unicorn fish Asian carps triplespine warty angler.</p> Leatherjacket zebra oto sea catfish slickhead anglerfish sandburrower, "northern anchovy remora common carp?" Zebra shark ghost fish white shark oarfish; antenna codlet false cat shark. Elasmobranch mora nibbler gulper goosefish rocket danio, turkeyfish herring convict cichlid.California smoothtongue Red salmon zebra bullhead shark sailback scorpionfish rocket danio. Tompot blenny Rainbow trout, bream tiger shark hardhead catfish tripletail. <img id ="fishies"  class = "swing" src="img/fishies.png" alt="fishies" width="100" height="100">Triplefin blenny Blobfish lined sole, Pacific salmon firefish, "lenok tonguefish," dragonet zebra turkeyfish. Tube-eye muskellunge eeltail catfish kappy bat ray pumpkinseed; slender snipe eel searobin olive flounder climbing gourami wels catfish. Sacramento blackfish, spiny dwarf catfish. Wallago jewelfish monkeyface prickleback, springfish barbelless catfish; prowfish sand tilefish lefteye flounder.Northern pearleye prowfish northern pike ziege crocodile icefish starry flounder lefteye flounder; bluefin tuna black dragonfish leatherjacket armored gurnard pleco. Sailbearer, lionfish, rock beauty! Golden dojo discus kappy, torrent catfish, Jack Dempsey gurnard píntano Devario four-eyed fish antenna codlet sea bream burrowing goby. Bighead carp gurnard, Steve fish; mud cat.</p>
 </div>
 
-<section id = "tshirts">
-<h3>Buy fish shirts!:</h3>
+<div id ="locationsposition">
+  <h1><br /></h1>
+</div>
 
-<img src = "img/shirt.jpg" alt = "shirt" weight = "200px" height = "200px">
+<div id = "locationgroup">
+  <div id = "locationstitle">
+    <h2>Our Delicious Locations</h2>
+    <h5>All locations are open Monday - Saturday from 10am - 6pm.</h5>
+  </div>
+  <section id ="locationlist">
+    <ul>
+      <li><ins><b>Pike Place Market</b></ins><br />85 Pike St<br />Seattle, WA 98101<br />206-555-5555</li>
+      <li><ins><b>Sea-Tac Airport</b></ins><br />17801 International Blvd<br />Seattle, WA 98158<br />206-555-5555</li>
+      <li><ins><b>Southcenter Mall</b></ins><br />2800 Southcenter Mall<br />Seattle, WA 98188<br />206-555-5555</li>
+      <li><ins><b>Bellevue Square</b></ins><br />575 Bellevue Way NE<br />Bellevue, WA 98004<br />425-555-5555</li>
+      <li><ins><b>Alki</b></ins><br />2620 Alki Ave SW<br />Seattle, WA 98116<br />206-555-5555</li>
+    </ul>
+    <div id="map"></div>
+  </section>
+</div>
+
+<section id = "menu">
+  <h3><ins>Cookie Selection</ins></h3>
+  <ul>
+    <li>Sockeye Salmon Cookie $5</li>
+    <li>Chinook Salmon Cookie $5</li>
+    <li>Coho Salmon Cookie $5</li>
+    <li>Raw Salmon Cookie $4</li>
+    <li>Add sprinkles $0.25</li>
+  </ul>
 </section>
 
-<footer id = "links">
-<h3>Salmon Links:</h3>
-  <ul>
-    <li><a href="http://salmondays.org/">Issaquah Salmon Days</a></li>
-    <li><a href="http://salmonfestseattle.com/home/event-calendar/">Salmon Fest</a></li>
-  </ul>
+
+<div id = "bottom">
+
+  <section id = "tshirts">
+    <h3><ins>Salmon shirts</ins></h3>
+    <img src = "img/shirt.png" alt = "shirt" weight = "200px" height = "200px">
+    <h6>Visit one of our locations to get your very<br />own Salmon Shirt!</h6>
+  </section>
+
   <div id ="familyphoto">
-<img src = "img/family.jpg" alt = "family" width = "300" height = "169.01408450704">
+    <img src = "img/family.jpg" alt = "family" width = "500" height = "281.69014084507">
+  </div>
+
+  <div id = "links">
+    <h3><ins>Salmon Links:</ins></h3>
+    <ul>
+      <li><a href="http://salmondays.org/">Issaquah Salmon Days</a></li>
+      <li><a href="http://salmonfestseattle.com/home/event-calendar/">Salmon Fest</a></li>
+    </ul>
+  </div>
+
 </div>
+
+<footer id = "contact">
+  <h4><ins>Contact:</ins></h4>
+  <a href="mailto:pat.is.a.freak@salmoncookies.com">Email Pat</a>
 </footer>
 
 </body>
-
-<!-- <script src='app.js' type="text/javascript"></script> -->
 
 </html>
